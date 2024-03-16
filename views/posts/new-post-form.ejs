@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/new-post-form.css" />
+    <title>Make a post</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="nav-var-container">
+          <div class="homeBtn-container"><a href="/applants">Home</a></div>
+          <div class="allPosts-container">
+            <a href="/applants/posts">All posts</a>
+          </div>
+        </div>
+        <div class="logo-container">
+          <div class="logo"><h1>applants</h1></div>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="header-container">
+          <div class="header-title-container"><h2>add a post</h2></div>
+        </div>
+
+
+        <div class="form-container">
+            
+          <form action="/applants/posts/1/new" method="POST" enctype="multipart/form-data" >
+
+
+            <div class="user-container">
+              <label for="user">User:</label>
+              <input autocomplete="off"f
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false" id="user" type="text" name="user" />
+            </div>
+
+            <div class="location-container">
+              <label for="location">Location:</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false" id="location" type="text" name="location" />
+            </div>
+
+            <div class="image-container">
+              <label for="image">Upload your plant pic:</label>
+              <input type="file" name="image" id="image"/>
+            </div>
+
+            <div class="caption-container">
+              <label for="caption">Tell us about your plant:</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false" id="caption" type="text" name="caption" />
+            </div>
+
+            <div class="scientific-name-container">
+              <label for="scientificName">Scientific Name:</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false" id="scientificName" type="text" name="scientificName" />
+            </div>
+
+            <div class="age-conatiner">
+              <label for="age">how old is your plant?</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"id="age" type="number" name="age" />
+            </div>
+
+            <div class="petname-container">
+              <label for="petname">Petname</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"id="petname" type="text" name="petname" />
+            </div>
+
+            <div class="origin-container">
+              <label for="originalFrom">Where is this plant from?</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"id="originalFrom" type="text" name="originalFrom" />
+            </div>
+
+            <div class="care-container">
+              <label for="care">Care:</label>
+              <input autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"id="care" type="text" name="care" />
+            </div>
+
+            <div class="button-container">
+              <button id="submitBtn" type="submit">Add post</button>
+            </div>
+        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

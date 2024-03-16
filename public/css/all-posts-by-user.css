@@ -1,0 +1,181 @@
+body {
+  background-image: url("/images/posts-by-user-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.nav-var-container {
+  height: 15vh;
+  width: 30%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-var-container a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+  font-weight: 400;
+}
+
+.nav-var-container a:hover {
+  color: #81b29a;
+}
+
+.title-container {
+  margin: 3rem;
+  text-align: center;
+  width: 25rem;
+  border: 2px solid #81b29a;
+  margin: -1rem 15rem 5rem auto;
+}
+
+.title-container h1 {
+  color: #81b29a;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.post-container {
+  margin-top: 3rem;
+  margin-left: 30rem;
+  height: auto;
+  width: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.post-container > .header-container {
+  height: 3rem;
+  width: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-container > .header-container div {
+  color: #81b29a;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+.post-container > .img-container {
+  height: 20rem;
+  width: 50vh;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+}
+
+.post-container > .img-container img {
+  height: 20rem;
+  width: 50vh;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.post-container > .img-container img:hover {
+  opacity: 1;
+  cursor: none;
+}
+
+.post-container > .likeBtn-container {
+  height: 2rem;
+  width: 50vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.post-container > .likeBtn-container button {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #81b29a;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+  transition: 0.5s;
+}
+
+.post-container > .likeBtn-container button:hover {
+  cursor: pointer;
+  color: #81b29a;
+  background-color: whitesmoke;
+}
+
+.post-container > .totalLikes-container {
+  margin-top: 1rem;
+  height: 2rem;
+  width: 50vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.post-container > .totalLikes-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: #81b29a;
+}
+
+.post-container > .caption-container {
+  height: 3rem;
+  width: 50vh;
+}
+
+.post-container > .caption-container p {
+  font-family: "Roboto", sans-serif;
+  color: #81b29a;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.post-container > .comments-container {
+  height: 4rem;
+  width: 50vh;
+}
+
+.post-container > .comments-container p {
+  color: #81b29a;
+}
+
+.post-container > .detailsBtn-container {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-container > .detailsBtn-container a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #81b29a;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+  transition: 0.5s;
+}
+
+.post-container > .detailsBtn-container a:hover {
+  color: #81b29a;
+  background-color: whitesmoke;
+}

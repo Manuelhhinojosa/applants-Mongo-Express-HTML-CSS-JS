@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/one-post.css" />
+    <title><%= post.user[0].user %>'s post</title>
+  </head>
+  <body>
+    <div class="nav-var-container">
+      <div class="homeBtn-container"><a href="/applants">Home</a></div>
+      <div class="allPosts-container">
+        <a href="/applants/posts">All posts</a>
+      </div>
+
+      <div class="editBtn-container">
+        <a href="/applants/posts/<%=post._id%>/edit">Edit this post</a>
+      </div>
+
+      <div class="delete-container">
+        <form
+          action="/applants/posts/<%= post._id %>?_method=DELETE"
+          method="POST"
+        >
+          <button type="submit">Delete this post</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="title-container"><h1><%=post.user[0].user %>'s Post</h1></div>
+
+    <div class="post-container">
+      <div class="left-container">
+        <div class="header-container">
+          <div class="user-container">
+            User:
+            <a href="/applants/posts/<%=post._id%>/user"
+              ><%=post.user[0].user %>
+            </a>
+          </div>
+          <div class="location-container">Location: <%=post.location %></div>
+        </div>
+        <div class="img-container">
+          <img
+          src="<%= post.img.url %>%>"
+            alt="<%=post.img%>%>"
+          />
+        </div>
+
+        <div class="totalLikes-container"><p>Likes: <%=post.likes %></p></div>
+        <div class="caption-container">
+          <p>Caption: <%= post.caption %></p>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="scientific-container">
+          <div><p>Scientific Name: <%= post.details.scientificName %></p></div>
+        </div>
+        <div class="age-container">
+          <div><p>Age: <%= post.details.age %></p></div>
+        </div>
+        <div class="petname-container">
+          <div><p>Petname: <%= post.details.petname %></p></div>
+        </div>
+        <div class="origin-container">
+          <div><p>Original from: <%= post.details.originalFrom %></p></div>
+        </div>
+        <div class="care-container">
+          <div><p>Care: <%= post.details.care %></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments-container">
+      <div class="comments-title-container">
+        <div><h2>Comments</h2></div>
+      </div>
+
+      <div class="list-of-comments-container">
+        <% post.comments.forEach(comment => { %>
+
+        <div class="comment-container">
+         
+            <div class="commentText-container">
+              <form action="/applants/posts/delete/<%=comment._id%>?_method=DELETE" method="POST">
+              <p><%= comment.comment %>. <sub> - <%=comment.name %>. </sub></p>
+            </div>
+
+            <div class="deleteComment-button">
+              <button type="submit">Delete comment</button>
+            </div>
+          </form>
+        </div>
+
+       
+        <% }) %>
+      </div>
+      <div class="addCommentBtn-container">
+        <a href="/applants/posts/<%=post._id %>/newcomment">Add a comment</a>
+      </div>
+    </div>
+  </body>
+</html>

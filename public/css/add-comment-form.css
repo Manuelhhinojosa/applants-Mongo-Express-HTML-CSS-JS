@@ -1,0 +1,110 @@
+body {
+  background-image: url("/images/add-comment-form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.main-container {
+  margin: auto;
+  height: 30rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar-container {
+  height: 3rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-container a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.nav-bar-container a:hover {
+  opacity: 1;
+}
+
+.title-container {
+  border: 1px solid whitesmoke;
+  height: 5rem;
+  width: 20rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+
+.form-container {
+  border: 1px solid whitesmoke;
+  height: 20rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-container div {
+  height: 5rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container label {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-weight: 400;
+  transition: 0.5s;
+  padding: 0.5rem;
+}
+
+.form-container label:hover {
+  color: whitesmoke;
+  font-size: 1.15rem;
+}
+
+.form-container input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+.form-container input:hover {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container button {
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: whitesmoke;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.form-container button:hover {
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: 900;
+}

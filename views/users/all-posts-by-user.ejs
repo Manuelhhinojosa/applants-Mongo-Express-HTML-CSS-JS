@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/all-posts-by-user.css" />
+    <title>All posts by user</title>
+  </head>
+  <body>
+    <div class="nav-var-container">
+        <div class="homeBtn-container"><a href="/applants">Home</a></div>
+        <div class="makePost-container">
+          <a href="/applants/posts">All posts</a>
+        </div>
+      </div>
+  
+      <div class="title-container"><h1>applants</h1></div>
+  
+      <% allPostsByUser.forEach(post => { %>
+      <div class="post-container">
+        <div class="header-container">
+          <div class="user-container">User: <%=post.user[0].user%></div>
+          <div class="location-container">Location: <%=post.location %></div>
+        </div>
+        <div class="img-container">
+          <img src="<%=post.img.url%>%>" alt="<%=post.img %>" />
+        </div>
+        
+        <div class="totalLikes-container"><p>Likes: <%=post.likes %></p></div>
+        <div class="caption-container">
+          <p>Description: <%= post.caption %></p>
+        </div>
+        
+  
+        <div class="detailsBtn-container">
+          <a href="/applants/posts/<%= post._id  %> ">Details</a>
+        </div>
+      </div>
+  
+      <% }) %>
+    </body>
+
+    
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/add-comment-form.css" />
+    <title>Add comment form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-bar-container">
+        <a href="/applants/posts/<%=post._id%>">Back</a>
+      </div>
+      <div class="title-container">
+        <h1>Add a comment</h1>
+      </div>
+
+      <div class="form-container">
+        <form action="/applants/posts/<%=post._id%>/newcomment" method="POST">
+          <div class="name-container">
+            <label for="name">Name:</label>
+
+            <input
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"
+              id="name"
+              type="text"
+              name="name"
+            />
+          </div>
+
+          <div class="comment-container">
+            <label for="comment">Comment:</label>
+
+            <input
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"
+              id="comment"
+              type="text"
+              name="comment"
+            />
+          </div>
+
+          <div class="button-container">
+            <button id="submitBtn" type="submit">add comment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
