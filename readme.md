@@ -111,7 +111,6 @@ For this project I used the following schemas and connections in between:
 2. App Screenshots.
 3. Technologies Used.
 4. Getting Started.
-5. Next Steps
 
 ---
 
@@ -125,8 +124,7 @@ applants.
 
 ### 1. Quik Intro :
 
-applants is a basic social web app inspired on Instagram.
-It functions as social media app where one can create, read, update and delete posts that consist of several pieces of information.
+This CRUD application, inspired by Instagram, is designed for showcasing pictures of plants. Built with MongoDB, Mongoose, MongoDB Atlas, Node.js and Express, the app enables users to create, read, update, and delete plant posts. Cloudinary is used for image storage, ensuring efficient management and delivery of high-quality photos. Users can interact with posts, view images, and explore plant collections, all within a dynamic and user-friendly interface.
 
 ---
 
@@ -180,15 +178,8 @@ It functions as social media app where one can create, read, update and delete p
 
 ### 4. Getting Started :
 
-Click [here](https://applants.herokuapp.com) to checkout the app.
+Click [here](https://applants.vercel.app/applants) to checkout the app.
 
 ---
 
-### 5. Next Steps :
 
-Futher imrpovements to the brower-based app:
-
-1. Improve schema design
-2. Improve routes
-3. Apply authentication
-4. Make it responsive
