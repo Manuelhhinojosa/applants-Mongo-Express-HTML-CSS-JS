@@ -11,7 +11,7 @@
 
 ---
 
-### 1. Name Of The Game :
+### 1. Name Of The App :
 
 applants.
 
@@ -117,7 +117,7 @@ For this project I used the following schemas and connections in between:
 
 ---
 
-### 1. Title Of The Game :
+### 1. Title Of The App :
 
 applants.
 
